@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Doctor Dashboard</title>
+
+    <link rel="stylesheet"
+          href="css/doctor.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h2>MediNova Prime</h2>
+
+            <p>Doctor Panel</p>
+
+        </div>
+
+        <ul>
+
+            <li class="active">🏠 Dashboard</li>
+
+            <li>👨‍⚕️ Patients</li>
+
+            <li>🩺 Consultation</li>
+
+            <li>💊 Prescriptions</li>
+
+            <li>🧪 Lab Tests</li>
+
+            <li>📋 Reports</li>
+
+            <li>🚪 Logout</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <div class="header">
+
+            <div>
+
+                <h1>Doctor Dashboard</h1>
+
+                <p>Good Morning, Dr. Rahul</p>
+
+            </div>
+
+            <div class="doctor">
+
+                🩺 Doctor
+
+            </div>
+
+        </div>
+
+        <!-- Dashboard Cards -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Today's Patients</h3>
+
+                <h2>18</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Completed</h3>
+
+                <h2>11</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Pending</h3>
+
+                <h2>7</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Emergency</h3>
+
+                <h2>2</h2>
+
+            </div>
+
+        </div>
+
+        <!-- Patient Queue -->
+
+        <div class="queue">
+
+            <h2>Today's Patient Queue</h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>ID</th>
+
+                        <th>Name</th>
+
+                        <th>Age</th>
+
+                        <th>Problem</th>
+
+                        <th>Action</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>101</td>
+
+                        <td>Suraj</td>
+
+                        <td>21</td>
+
+                        <td>Fever</td>
+
+                        <td>
+
+                            <button onclick="startConsultation()">
+
+                                Start
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>102</td>
+
+                        <td>Rahul</td>
+
+                        <td>32</td>
+
+                        <td>Headache</td>
+
+                        <td>
+
+                            <button onclick="startConsultation()">
+
+                                Start
+
+                            </button>
+
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/doctor.js"></script>
+
+</body>
+
+</html>

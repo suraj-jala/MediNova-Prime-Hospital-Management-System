@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reception Dashboard</title>
+
+    <link rel="stylesheet" href="css/reception.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h2>MediNova Prime</h2>
+
+            <p>Reception Panel</p>
+
+        </div>
+
+        <ul>
+
+            <li class="active">🏠 Dashboard</li>
+
+            <li>🩺 Register Patient</li>
+
+            <li>📅 Appointments</li>
+
+            <li>👨‍⚕️ Doctors</li>
+
+            <li>💊 Pharmacy</li>
+
+            <li>💰 Billing</li>
+
+            <li>⚙ Settings</li>
+
+            <li style="margin-top:40px;">🚪 Logout</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main -->
+
+    <div class="main">
+
+        <!-- Header -->
+
+        <div class="header">
+
+            <h1>Reception Dashboard</h1>
+
+            <div class="user">
+
+                Receptionist
+
+            </div>
+
+        </div>
+
+        <!-- Registration Card -->
+
+        <div class="card">
+
+            <h2>Register New Patient</h2>
+
+            <form id="patientForm">
+
+                <div class="row">
+
+                    <div class="input-box">
+
+                        <label>Patient ID</label>
+
+                        <input type="number" id="patientId">
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Patient Name</label>
+
+                        <input type="text" id="patientName">
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-box">
+
+                        <label>Age</label>
+
+                        <input type="number" id="age">
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Gender</label>
+
+                        <select id="gender">
+
+                            <option>Male</option>
+
+                            <option>Female</option>
+
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-box">
+
+                        <label>Mobile Number</label>
+
+                        <input type="text">
+
+                    </div>
+
+                    <div class="input-box">
+
+                        <label>Blood Group</label>
+
+                        <select>
+
+                            <option>A+</option>
+
+                            <option>A-</option>
+
+                            <option>B+</option>
+
+                            <option>B-</option>
+
+                            <option>O+</option>
+
+                            <option>O-</option>
+
+                            <option>AB+</option>
+
+                            <option>AB-</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-box full">
+
+                        <label>Address</label>
+
+                        <textarea rows="3"></textarea>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="input-box full">
+
+                        <label>Problem / Symptoms</label>
+
+                        <textarea id="problem" rows="4"></textarea>
+
+                    </div>
+
+                </div>
+
+                <button type="submit">
+
+                    Register Patient
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/reception.js"></script>
+
+</body>
+
+</html>

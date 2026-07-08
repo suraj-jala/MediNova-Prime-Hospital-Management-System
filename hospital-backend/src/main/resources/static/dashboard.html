@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediNova Prime Dashboard</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+
+    <div class="sidebar">
+
+        <div class="logo">
+
+            <h2>MediNova Prime</h2>
+
+            <p>Hospital Management System</p>
+
+        </div>
+
+        <ul>
+
+            <li class="active" onclick="goDashboard()">🏠 Dashboard</li>
+
+            <li onclick="goReception()">🩺 Reception</li>
+
+            <li onclick="goDoctor()">👨‍⚕️ Doctor</li>
+
+            <li onclick="goBilling()">💳 Billing</li>
+
+            <li onclick="goAdmin()">⚙ Administration</li>
+
+            <li onclick="logout()">🚪 Logout</li>
+
+        </ul>
+
+    </div>
+
+    <!-- Main Content -->
+
+    <div class="main">
+
+        <div class="topbar">
+
+            <div>
+
+                <h1>Welcome to MediNova Prime</h1>
+
+                <p>Smart Hospital Management Dashboard</p>
+
+            </div>
+
+            <div class="date">
+
+                <span id="currentDate"></span>
+
+            </div>
+
+        </div>
+
+        <!-- Statistics -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Total Patients</h3>
+
+                <h2>248</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Doctors</h3>
+
+                <h2>18</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Appointments</h3>
+
+                <h2>42</h2>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Today's Revenue</h3>
+
+                <h2>₹82,450</h2>
+
+            </div>
+
+        </div>
+
+        <!-- Modules -->
+
+        <h2 class="title">Hospital Modules</h2>
+
+        <div class="modules">
+
+            <div class="module" onclick="goReception()">
+
+                <h3>🩺 Reception</h3>
+
+                <p>Register Patients</p>
+
+            </div>
+
+            <div class="module" onclick="goDoctor()">
+
+                <h3>👨‍⚕️ Doctor</h3>
+
+                <p>Consult Patients</p>
+
+            </div>
+
+            <div class="module" onclick="goBilling()">
+
+                <h3>💳 Billing</h3>
+
+                <p>Generate Bills</p>
+
+            </div>
+
+            <div class="module" onclick="goAdmin()">
+
+                <h3>⚙ Administration</h3>
+
+                <p>Manage Hospital</p>
+
+            </div>
+
+        </div>
+
+        <!-- Recent Activity -->
+
+        <div class="activity">
+
+            <h2>Recent Activity</h2>
+
+            <table>
+
+                <tr>
+
+                    <th>Time</th>
+
+                    <th>Activity</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>09:15 AM</td>
+
+                    <td>Patient Registered</td>
+
+                    <td>Completed</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>10:05 AM</td>
+
+                    <td>Consultation Finished</td>
+
+                    <td>Completed</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>10:40 AM</td>
+
+                    <td>Bill Generated</td>
+
+                    <td>Paid</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
